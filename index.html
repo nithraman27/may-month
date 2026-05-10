@@ -1,0 +1,1573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mom's Visit · May 17 – June 2, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Manrope:wght@300..800&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #faf6ee;
+  --bg-soft: #f3ecda;
+  --bg-card: #fdfaf2;
+  --ink: #1c1814;
+  --ink-soft: #5c5447;
+  --ink-faint: #8f8676;
+  --rule: #e6dec9;
+  --rose: #c25e3f;
+  --sage: #6e8a5b;
+  --sky: #5d7d96;
+  --amber: #b8843e;
+  --plum: #84638a;
+  --rust: #a85a3e;
+  --booking-bg: #e6efdc;
+  --booking-text: #4a6731;
+  --transit-bg: #e1ebf2;
+  --transit-text: #3a5871;
+  --warning-bg: #f5e9cd;
+  --warning-text: #8a601f;
+  --tip-bg: #f1ddd1;
+  --tip-text: #874a30;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: 64px; }
+body {
+  font-family: 'Manrope', sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  font-size: 16px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.005em;
+}
+/* HERO */
+.hero {
+  padding: 88px 32px 64px;
+  text-align: center;
+  border-bottom: 1px solid var(--rule);
+  background:
+    radial-gradient(ellipse at 20% 0%, rgba(194, 94, 63, 0.12), transparent 50%),
+    radial-gradient(ellipse at 80% 100%, rgba(110, 138, 91, 0.12), transparent 50%),
+    linear-gradient(180deg, #f6ebd5 0%, var(--bg) 100%);
+  position: relative;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 50%; transform: translateX(-50%);
+  width: 60px; height: 1px; background: var(--ink);
+}
+.hero-tag {
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--rose);
+  margin-bottom: 24px;
+  display: inline-block;
+}
+.hero-title {
+  font-family: 'Fraunces';
+  font-weight: 400;
+  font-style: italic;
+  font-size: clamp(42px, 8vw, 78px);
+  line-height: 1.0;
+  letter-spacing: -0.025em;
+  margin-bottom: 18px;
+  color: var(--ink);
+}
+.hero-title .accent {
+  font-style: normal;
+  font-weight: 600;
+  color: var(--rose);
+}
+.hero-sub {
+  font-size: 17px;
+  color: var(--ink-soft);
+  max-width: 540px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+.hero-meta {
+  margin-top: 40px;
+  display: flex;
+  gap: 36px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.hero-stat {
+  text-align: center;
+}
+.hero-stat b {
+  display: block;
+  font-family: 'Fraunces';
+  font-size: 30px;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--ink);
+  line-height: 1;
+}
+.hero-stat span {
+  display: block;
+  margin-top: 4px;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  font-weight: 600;
+}
+/* DAY NAV */
+.day-nav {
+  position: sticky;
+  top: 0;
+  background: rgba(250, 246, 238, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--rule);
+  z-index: 20;
+  padding: 10px 0;
+}
+.day-nav-inner {
+  display: flex;
+  gap: 4px;
+  overflow-x: auto;
+  padding: 0 24px;
+  scrollbar-width: none;
+}
+.day-nav-inner::-webkit-scrollbar { display: none; }
+.day-nav a {
+  flex: 0 0 auto;
+  padding: 7px 12px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+  text-decoration: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  transition: all 0.2s;
+  text-transform: uppercase;
+}
+.day-nav a:hover { background: var(--bg-soft); color: var(--ink); }
+.day-nav a.grad { color: var(--rose); border-color: rgba(194,94,63,0.35); background: rgba(194,94,63,0.06); }
+/* CONTAINER */
+.container {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+/* DAY SECTION */
+.day {
+  margin-bottom: 88px;
+  padding-top: 56px;
+  scroll-margin-top: 60px;
+}
+.day:first-of-type { padding-top: 64px; }
+.day-header {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 36px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--rule);
+  flex-wrap: wrap;
+}
+.day-meta {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+.day-num {
+  display: inline-block;
+  background: var(--ink);
+  color: var(--bg);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.day-title {
+  font-family: 'Fraunces';
+  font-weight: 500;
+  font-style: italic;
+  font-size: 30px;
+  letter-spacing: -0.02em;
+  flex: 1 1 100%;
+  margin-top: 4px;
+  color: var(--ink);
+}
+.day-pills {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 6px;
+  flex: 1 1 100%;
+}
+.pill {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.pill.booked { background: var(--booking-bg); color: var(--booking-text); }
+.pill.rest { background: var(--bg-soft); color: var(--ink-soft); }
+.pill.travel { background: var(--transit-bg); color: var(--transit-text); }
+.pill.special { background: rgba(194,94,63,0.12); color: var(--rose); }
+.pill.shopping { background: var(--tip-bg); color: var(--tip-text); }
+.pill.warn { background: var(--warning-bg); color: var(--warning-text); }
+/* TIMELINE */
+.timeline {
+  position: relative;
+  padding-left: 28px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  bottom: 10px;
+  width: 1.5px;
+  background: linear-gradient(180deg,
+    var(--rose) 0%,
+    var(--amber) 22%,
+    var(--sage) 44%,
+    var(--sky) 66%,
+    var(--plum) 88%,
+    var(--rust) 100%);
+  opacity: 0.45;
+}
+.stop {
+  position: relative;
+  padding-bottom: 28px;
+}
+.stop:last-child { padding-bottom: 0; }
+.stop::before {
+  content: '';
+  position: absolute;
+  left: -28px;
+  top: 5px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: var(--rose);
+  border: 2.5px solid var(--bg);
+  box-shadow: 0 0 0 1.5px var(--rose);
+}
+.stop:nth-of-type(6n+2)::before { background: var(--amber); box-shadow: 0 0 0 1.5px var(--amber); }
+.stop:nth-of-type(6n+3)::before { background: var(--sage); box-shadow: 0 0 0 1.5px var(--sage); }
+.stop:nth-of-type(6n+4)::before { background: var(--sky); box-shadow: 0 0 0 1.5px var(--sky); }
+.stop:nth-of-type(6n+5)::before { background: var(--plum); box-shadow: 0 0 0 1.5px var(--plum); }
+.stop:nth-of-type(6n)::before { background: var(--rust); box-shadow: 0 0 0 1.5px var(--rust); }
+.stop-time {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--ink-soft);
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+}
+.stop-time .check { color: var(--sage); margin-left: 4px; }
+.stop-title {
+  font-family: 'Fraunces';
+  font-weight: 500;
+  font-size: 19px;
+  letter-spacing: -0.01em;
+  margin-bottom: 6px;
+  color: var(--ink);
+  line-height: 1.25;
+}
+.stop-desc {
+  font-size: 14.5px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+.info {
+  margin-top: 10px;
+  padding: 10px 14px;
+  border-radius: 7px;
+  font-size: 13px;
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  line-height: 1.5;
+}
+.info .icon { flex-shrink: 0; font-size: 14px; line-height: 1.4; }
+.info-booking { background: var(--booking-bg); color: var(--booking-text); }
+.info-transit { background: var(--transit-bg); color: var(--transit-text); }
+.info-warning { background: var(--warning-bg); color: var(--warning-text); }
+.info-tip { background: var(--tip-bg); color: var(--tip-text); }
+/* DAY NOTE */
+.day-note {
+  margin-top: 24px;
+  padding: 18px 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--rule);
+  border-radius: 10px;
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+.day-note h4 {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+.day-note ul { padding-left: 18px; }
+.day-note li { margin-bottom: 4px; }
+/* FOOTER */
+.footer {
+  background: var(--bg-soft);
+  padding: 72px 24px 80px;
+  margin-top: 80px;
+  border-top: 1px solid var(--rule);
+}
+.footer-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+.footer h2 {
+  font-family: 'Fraunces';
+  font-weight: 500;
+  font-style: italic;
+  font-size: 36px;
+  margin-bottom: 8px;
+  letter-spacing: -0.02em;
+}
+.footer .sub {
+  color: var(--ink-soft);
+  margin-bottom: 36px;
+  font-size: 15px;
+}
+.checklist {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+  margin-bottom: 48px;
+}
+.check-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  padding: 14px 18px;
+  background: var(--bg-card);
+  border-radius: 10px;
+  border-left: 3px solid var(--rose);
+  font-size: 14px;
+}
+.check-item .num {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-weight: 600;
+  font-size: 17px;
+  color: var(--rose);
+  flex-shrink: 0;
+  line-height: 1;
+  padding-top: 1px;
+}
+.check-item b { display: block; color: var(--ink); margin-bottom: 2px; }
+.check-item span { font-size: 13px; color: var(--ink-soft); line-height: 1.45; }
+.bookings-list {
+  background: var(--bg-card);
+  border-radius: 12px;
+  padding: 24px 28px;
+  margin-bottom: 36px;
+}
+.bookings-list h3 {
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+.bookings-list .b-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 10px 0;
+  border-bottom: 1px dashed var(--rule);
+  font-size: 14px;
+  gap: 12px;
+}
+.bookings-list .b-row:last-child { border-bottom: none; }
+.bookings-list .b-row b {
+  font-family: 'Fraunces';
+  font-weight: 500;
+  font-size: 15px;
+}
+.bookings-list .b-row .when {
+  color: var(--ink-faint);
+  font-size: 12px;
+  text-align: right;
+  flex-shrink: 0;
+}
+.signoff {
+  text-align: center;
+  font-family: 'Fraunces';
+  font-style: italic;
+  font-size: 16px;
+  color: var(--ink-soft);
+  padding-top: 24px;
+  border-top: 1px solid var(--rule);
+}
+/* RESPONSIVE */
+@media (max-width: 640px) {
+  .hero { padding: 60px 20px 44px; }
+  .hero-meta { gap: 22px; }
+  .day { margin-bottom: 64px; padding-top: 36px; }
+  .day-title { font-size: 24px; }
+  .stop-title { font-size: 17px; }
+  .container { padding: 0 18px; }
+  .footer { padding: 56px 20px; }
+  .footer h2 { font-size: 28px; }
+}
+@media print {
+  .day-nav { display: none; }
+  .day { page-break-inside: avoid; }
+  body { background: white; }
+}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <span class="hero-tag">May 17 — June 2, 2026</span>
+  <h1 class="hero-title">Amma's <span class="accent">American</span> Summer</h1>
+  <p class="hero-sub">Seventeen days from Newark to Niagara to D.C. — anchored by a graduation, threaded with skylines, temples, and tax‑free shopping.</p>
+  <div class="hero-meta">
+    <div class="hero-stat"><b>17</b><span>Days</span></div>
+    <div class="hero-stat"><b>7</b><span>Cities</span></div>
+    <div class="hero-stat"><b>5</b><span>Bookings</span></div>
+    <div class="hero-stat"><b>1</b><span>Graduation</span></div>
+  </div>
+</header>
+
+<nav class="day-nav">
+  <div class="day-nav-inner">
+    <a href="#d17">Sun 17</a>
+    <a href="#d18">Mon 18</a>
+    <a href="#d19">Tue 19</a>
+    <a href="#d20" class="grad">Wed 20 🎓</a>
+    <a href="#d21">Thu 21</a>
+    <a href="#d22">Fri 22</a>
+    <a href="#d23">Sat 23</a>
+    <a href="#d24">Sun 24</a>
+    <a href="#d25">Mon 25</a>
+    <a href="#d26">Tue 26</a>
+    <a href="#d27">Wed 27</a>
+    <a href="#d28">Thu 28</a>
+    <a href="#d29">Fri 29</a>
+    <a href="#d30">Sat 30</a>
+    <a href="#d31">Sun 31</a>
+    <a href="#d1">Mon 1</a>
+    <a href="#d2">Tue 2</a>
+  </div>
+</nav>
+
+<div class="container">
+
+<!-- ========== DAY 1 ========== -->
+<section class="day" id="d17">
+  <div class="day-header">
+    <span class="day-meta"><span class="day-num">Day 01</span>Sun 17 May</span>
+    <h2 class="day-title">Tram → Ferry → Wall St → Coney Sunset</h2>
+    <div class="day-pills"><span class="pill special">Mom's First Full Day</span></div>
+  </div>
+  <div class="timeline">
+    <div class="stop">
+      <div class="stop-time">8:30 AM</div>
+      <div class="stop-title">Leave home → Harrison PATH eastbound</div>
+      <div class="stop-desc">Tap your phone at the turnstile ($3 each, OMNY contactless). Mom uses your second card in your Apple Wallet — swipe up in Wallet to select before tapping. PATH ride: ~25 min underwater across the Hudson on the Newark–WTC line.</div>
+      <div class="info info-transit"><span class="icon">🚇</span><div>Newark–WTC line only stops at WTC in Manhattan — no midtown stops. That's fine; we're going via Lower Manhattan today.</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">9:05 AM</div>
+      <div class="stop-title">World Trade Center → walk to Fulton St subway</div>
+      <div class="stop-desc">5 min through the Oculus, all underground. Tap into the subway fresh ($3 each — separate fare from PATH). Board <b>4 or 5 train uptown EXPRESS</b> — skip the 6, it's local.</div>
+      <div class="info info-transit"><span class="icon">🚇</span><div>4/5 from Fulton to 59 St-Lexington Av: ~12 min, 4 stops.</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">9:38 AM</div>
+      <div class="stop-title">Roosevelt Island Tramway — 60th & 2nd Ave</div>
+      <div class="stop-desc">Walk 2 blocks east + 1 north from the subway exit. Tap into the tram ($3 each, same OMNY system). Tram runs every 7–15 min, no reservation needed. Sit on the <b>right side</b> going to Roosevelt Island for the bridge view.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">9:50 AM</div>
+      <div class="stop-title">Roosevelt Island — walk south to FDR Four Freedoms Park</div>
+      <div class="stop-desc">15-min waterfront walk to the southern tip of the island. Open lawns, granite walkways, the secret skyline view most tourists never find. Free. The <b>Red Bus</b> (free island shuttle) saves mom's legs if she's tired.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">10:45 AM</div>
+      <div class="stop-title">Walk back north to Roosevelt Island Ferry Terminal</div>
+      <div class="stop-desc">Ferry pier is at E Main St, right next to the Tram Plaza on the east side of the island. ~10 min walk north from FDR Park.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">11:00 AM</div>
+      <div class="stop-title">NYC Ferry — Astoria Route southbound to Wall St</div>
+      <div class="stop-desc">Buy ticket in the NYC Ferry app — $4.50 each. Sundays the Astoria route departs Roosevelt Island roughly every 35–40 min — confirm the next departure in the app before walking down.</div>
+      <div class="info info-tip"><span class="icon">⛴️</span><div>Sit on the <b>right side</b> heading south for the full Manhattan skyline. The southbound Astoria ferry is one of the most underrated rides in NYC.</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">11:30 AM</div>
+      <div class="stop-title">Ferry sail south — 30 min to Wall St / Pier 11</div>
+      <div class="stop-desc">Stops: Long Island City → East 34th St → Brooklyn Navy Yard → Wall St / Pier 11. You'll pass the UN, the Empire State Building, the Brooklyn Bridge, and see the Statue of Liberty in the distance. Best skyline ride of the trip.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">12:00 PM</div>
+      <div class="stop-title">Wall St / Pier 11 — disembark</div>
+      <div class="stop-desc">Quick walk to <b>Charging Bull and Fearless Girl</b> on Bowling Green (5 min). Federal Hall and the New York Stock Exchange façade are right there. May 19 has Wall St as a longer stop — today is just photos to set the scene.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">12:30 PM</div>
+      <div class="stop-title">Lunch — Brookfield Place or Stone Street</div>
+      <div class="stop-desc"><b>Brookfield Place food hall</b> (5 min walk west, indoor, lots of options including Hudson Eats with halal, Indian, Mediterranean) or <b>Stone Street</b> historic cobblestone block (outdoor seating, beer-garden vibe, food halls).</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">1:30 PM</div>
+      <div class="stop-title">Battery Park stroll</div>
+      <div class="stop-desc">10-min walk south. Free Statue of Liberty + Ellis Island view from the shore (mom's preview before the May 19 ferry to Liberty). <b>Castle Clinton</b> (free historic fort), <b>SeaGlass Carousel</b> ($5, glowing fish carousel inside a nautilus shell — ride if she'd love it), waterfront promenade.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">2:30 PM</div>
+      <div class="stop-title">Subway to Coney Island — 4/5 + D train</div>
+      <div class="stop-desc">Walk 5 min back to the <b>Wall St 4/5 station</b>. Tap in ($3 each). Board <b>4 or 5 train Brooklyn-bound</b> to <b>Atlantic Av-Barclays Center</b> (~15 min, 5 stops). Cross-platform transfer to <b>D train Coney Island-bound</b> (~35 min, 8 stops). Free transfer.</div>
+      <div class="info info-tip"><span class="icon">💡</span><div>Atlantic Av-Barclays is a major Brooklyn hub. The D train shares a platform — transfer takes 1 min.</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">3:25 PM</div>
+      <div class="stop-title">Coney Island–Stillwell Avenue → boardwalk</div>
+      <div class="stop-desc">5-min walk to the boardwalk. The amusement park, beach, and boardwalk are all clustered together. Smell the salt air, ocean is right there.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">3:45 PM</div>
+      <div class="stop-title">Boardwalk + Luna Park</div>
+      <div class="stop-desc">Walk the famous boardwalk. <b>Wonder Wheel</b> (~$15, 12-min slow scenic ride, classic) and the original 1927 <b>Cyclone</b> wooden coaster (~$15, 90 sec, brutal — skip if mom has back issues). Ride passes available if you want multiple.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">5:30 PM</div>
+      <div class="stop-title">Nathan's Famous original — dinner</div>
+      <div class="stop-desc">Iconic Coney Island hot dogs since 1916. Crinkle fries are the move. Veg options nearby on the boardwalk if needed.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">6:30 PM</div>
+      <div class="stop-title">Beach + boardwalk wind-down</div>
+      <div class="stop-desc">Walk on the sand barefoot. Photos with the Wonder Wheel lit up against the sky as it gets darker. Bench-sit if mom's tired.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">7:45 PM</div>
+      <div class="stop-title">Sunset on the beach — 8:00 PM</div>
+      <div class="stop-desc">Mom's first sunset in America. Stay through blue hour till ~8:30 PM for lit-boardwalk photos.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">8:30 PM</div>
+      <div class="stop-title">Coney Island → Harrison via F + A + WTC PATH</div>
+      <div class="stop-desc">Walk to <b>Stillwell subway</b>, tap in. <b>F train Manhattan-bound</b> to <b>Jay Street–MetroTech</b> (~50 min, 14 stops, mom can rest). Same complex, transfer to <b>A train Manhattan-bound</b> (1 stop, ~5 min) to <b>Fulton Street</b>. Walk through the Oculus underground to <b>WTC PATH</b>. <b>Newark–WTC line westbound</b> to Harrison (~25 min). Home by ~10:15 PM.</div>
+      <div class="info info-transit"><span class="icon">🚇</span><div>F → A transfer at Jay Street is free (same fare). A train Jay St → Fulton is one stop under the East River.</div></div>
+    </div>
+  </div>
+  <div class="day-note">
+    <h4>Day at a glance · per person</h4>
+    <ul>
+      <li>2× PATH ($6) + 4× subway/tram ($12) + ferry ($4.50) = <b>$22.50 transit</b></li>
+      <li>+ lunch + Wonder Wheel + Nathan's + carousel ≈ <b>$70–80 total</b></li>
+    </ul>
+    <h4 style="margin-top:14px;">Pacing notes</h4>
+    <ul>
+      <li>Mom landed last night — let her set the pace. Slow down at FDR Park, lengthen lunch, sit on the beach longer if needed.</li>
+      <li>Sunscreen + hat — Coney Island boardwalk has zero shade.</li>
+      <li>Save Brooklyn Bridge + DUMBO for May 22 evening — that's the sunset crossing, golden hour photo of the trip.</li>
+      <li>Tomorrow is the marathon Vessel / Edge / Summit day. Aim to be home by 10:30 PM tonight.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== DAY 2 ========== -->
+<section class="day" id="d18">
+  <div class="day-header">
+    <span class="day-meta"><span class="day-num">Day 02</span>Mon 18 May</span>
+    <h2 class="day-title">Vessel · Edge · Midtown · Summit</h2>
+    <div class="day-pills"><span class="pill booked">✓ 3 Bookings</span><span class="pill warn">High‑Step Day</span></div>
+  </div>
+  <div class="timeline">
+    <div class="stop">
+      <div class="stop-time">9:15 AM</div>
+      <div class="stop-title">Leave home → Harrison PATH eastbound</div>
+      <div class="stop-desc">Tap Card 1 + Card 2 ($3 each, OMNY). Board <b>Newark–WTC line eastbound</b> — ride only <b>1 stop</b> to Journal Square.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">9:25 AM</div>
+      <div class="stop-title">Journal Square — transfer to JSQ–33rd Street line</div>
+      <div class="stop-desc">Free transfer (same fare zone). Board the JSQ–33rd line eastbound to Manhattan. Ride takes ~25 min, stops at Christopher St → 9th → 14th → 23rd → 33rd.</div>
+      <div class="info info-transit"><span class="icon">🚇</span><div>This route gets you to Midtown directly — Newark–WTC only goes to WTC, which would mean a long uptown subway from Lower Manhattan.</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">9:55 AM</div>
+      <div class="stop-title">33rd Street PATH — walk to subway</div>
+      <div class="stop-desc">Exit at 6th Ave & 33rd St. Walk 1 block north to <b>34 St-Herald Sq subway</b>. Tap into subway ($3 each — separate fare from PATH).</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">10:05 AM</div>
+      <div class="stop-title">7 train westbound — 1 stop to Hudson Yards</div>
+      <div class="stop-desc">Board the 7 going west, get off at <b>34 St-Hudson Yards</b> (the terminus). Walk to Vessel base, ~5 min from station exit.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">10:30 AM</div>
+      <div class="stop-title">Arrive Vessel — security check-in</div>
+      <div class="stop-desc">25-min buffer before your 11 AM slot. Use it for photos of the structure from the outside.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">11:00 AM <span class="check">✓</span></div>
+      <div class="stop-title">Vessel — General Admission</div>
+      <div class="stop-desc">Vessel reopened in March 2026 with timed entry. You can climb levels 1 and 2 plus parts of upper levels (top floor permanently closed). Steel mesh barriers preserve the experience while preventing further tragedies. ~40 min to climb and enjoy.</div>
+      <div class="info info-booking"><span class="icon">🎟️</span><div>Booking <b>RSGJP8MT</b> · 11:00 AM · Adult × 2</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">11:50 AM</div>
+      <div class="stop-title">Walk to Edge — 5 minutes</div>
+      <div class="stop-desc">30 Hudson Yards entrance. Security is airport-style and takes 10–15 min on a Monday morning.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">12:10 PM <span class="check">✓</span></div>
+      <div class="stop-title">Edge Observation Deck</div>
+      <div class="stop-desc">Triangular sky deck with the glass floor. Best photos from the southwest corner facing the Statue of Liberty. Mom will be nervous on the glass — let her ease in. ~1 hour.</div>
+      <div class="info info-booking"><span class="icon">🎟️</span><div>Adult × 2 · Mon 18 May · 12:10 PM</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">1:20 PM</div>
+      <div class="stop-title">Hudson Yards Public Square + High Line entrance</div>
+      <div class="stop-desc">Quick photos around the plaza, then enter the <b>High Line</b> directly from Hudson Yards (entrance at 30th St & 11th Ave).</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">1:30 PM</div>
+      <div class="stop-title">Walk the High Line south to Chelsea Market</div>
+      <div class="stop-desc">Elevated park on old freight rail tracks. ~1 mile, ~1 hour at gentle pace. Wildflowers, sculptures, skyline peek-throughs. Drop down at the 16th St staircase right at Chelsea Market.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">2:30 PM</div>
+      <div class="stop-title">Lunch at Chelsea Market — veg fast-casual</div>
+      <div class="stop-desc">Old Nabisco factory turned food hall. Veg picks all in one building: <b>Beyond Sushi</b> (100% vegan rolls + bowls), <b>Mokbar</b> (Korean ramen with tofu/veg option), <b>&pizza</b> (build-your-own with veg toppings), <b>Friedman's</b> (salads + veg sandwiches), <b>Doughnuttery</b> for a sweet finish. Browse the shops afterward.</div>
+      <div class="info info-tip"><span class="icon">🌱</span><div>If mom would rather <b>Chipotle</b> or <b>Cava</b>, both have locations within a 10-min walk: Chipotle at 30th & 8th Ave (near Hudson Yards) or Cava at 14th & 3rd Ave (subway-stop away).</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">3:45 PM</div>
+      <div class="stop-title">Subway to Midtown — A/C/E uptown</div>
+      <div class="stop-desc">Walk to <b>14 St-8 Av subway</b> (5 min). Tap in ($3 each). Board <b>A or C train uptown</b>, get off at <b>50 St</b> (10 min, 4 stops). You're at the heart of Midtown.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">4:10 PM</div>
+      <div class="stop-title">Rockefeller Center → St. Patrick's → 5th Ave</div>
+      <div class="stop-desc">Walk through Rockefeller Plaza, NBC Studios. <b>St. Patrick's Cathedral</b> (free, gorgeous gothic interior, take 15 min inside). 5th Ave: Trump Tower lobby (gilded waterfall), Bergdorf Goodman, Apple Cube, Tiffany.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">5:15 PM</div>
+      <div class="stop-title">Lego, Nintendo NY, M&M Store</div>
+      <div class="stop-desc">All clustered near Rockefeller. Quick photo-style visits. Mom can pick up small souvenirs.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">5:50 PM</div>
+      <div class="stop-title">Times Square — TKTS red steps</div>
+      <div class="stop-desc">The chaos and the lights. Photos at the red TKTS steps. Quick visit — 25 min is plenty for mom to soak it in.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">6:30 PM</div>
+      <div class="stop-title">Dinner — Cava (Mediterranean grain bowls)</div>
+      <div class="stop-desc">Walk to <b>Cava at 100 Park Avenue</b> (right next to Summit at One Vanderbilt). Build-your-own Mediterranean bowl: rice or greens base + falafel + harissa lentils + hummus + tzatziki + roasted veggies + pita. All veg, fast casual, sit-down. ~$15 per bowl.</div>
+      <div class="info info-tip"><span class="icon">🌱</span><div>Cava is fully customizable for veg — mom can avoid anything she doesn't want. Backup nearby options: <b>Chipotle</b> (50th & Lex, sofritas/black bean bowl) or <b>Sweetgreen</b> (Bryant Park area, salads + warm bowls).</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">7:45 PM</div>
+      <div class="stop-title">Walk to Summit — 2 minutes</div>
+      <div class="stop-desc">Cava is literally next to One Vanderbilt. Walk to the Summit entrance at 42nd & Vanderbilt.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">8:00 PM <span class="check">✓</span></div>
+      <div class="stop-title">Summit One Vanderbilt</div>
+      <div class="stop-desc">Mirror rooms first (Air, Levitation, Affinity), then ascend to the top observation. <b>Sunset hits at 8:11 PM</b> while you're up there — perfect timing. You'll see day → golden hour → blue hour → night, all from the same ticket. Allow 90+ min.</div>
+      <div class="info info-booking"><span class="icon">🎟️</span><div>Summit Experience · Adult × 2 · 8:00 PM</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">9:35 PM</div>
+      <div class="stop-title">Summit → Harrison via 33rd Street PATH</div>
+      <div class="stop-desc">Walk 4 min to <b>42 St-Bryant Park subway</b>. Tap in ($3 each). <b>B/D/F/M to 34 St-Herald Sq</b> (1 stop, 3 min). Walk 1 block to <b>33rd Street PATH</b>. Tap in ($3 each). <b>JSQ–33rd line westbound</b> to Journal Square (~25 min). Transfer at JSQ to Newark–WTC line. <b>Harrison</b> at ~10:30 PM. Home by ~10:35 PM.</div>
+    </div>
+  </div>
+  <div class="day-note">
+    <h4>Day at a glance · per person</h4>
+    <ul>
+      <li>4× PATH ($12) + 3× subway ($9) = <b>$21 transit</b></li>
+      <li>+ lunch + Cava + snacks ≈ <b>$60–75 total</b></li>
+      <li>Vessel / Edge / Summit already paid</li>
+    </ul>
+    <h4 style="margin-top:14px;">Survival notes for the marathon day</h4>
+    <ul>
+      <li>~15,000 steps. Most comfortable shoes mom owns. Pack a backup pair of socks.</li>
+      <li>Carry water bottle + small umbrella. May weather is unpredictable.</li>
+      <li>Three observation decks today are genuinely different: Vessel = architecture climb, Edge = glass floor, Summit = mirror rooms + sunset. No real redundancy.</li>
+      <li>Empire State Building is NOT on the agenda — you've already done 3 obs decks today, ESB would be redundant + expensive.</li>
+      <li>Cava (Park Ave) is right next to Summit — perfect timing, no rush.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== DAY 3 ========== -->
+<section class="day" id="d19">
+  <div class="day-header">
+    <span class="day-meta"><span class="day-num">Day 03</span>Tue 19 May</span>
+    <h2 class="day-title">Arte → Liberty → Wall St → Chinatown → SoHo</h2>
+    <div class="day-pills"><span class="pill booked">✓ 2 Bookings</span></div>
+  </div>
+  <div class="timeline">
+    <div class="stop">
+      <div class="stop-time">9:00 AM</div>
+      <div class="stop-title">Leave home → Harrison PATH eastbound</div>
+      <div class="stop-desc">Tap Card 1 + Card 2 ($3 each). Newark–WTC line, 1 stop to <b>Journal Square</b>. ~5 min.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">9:15 AM</div>
+      <div class="stop-title">Journal Square — transfer to JSQ-33rd line</div>
+      <div class="stop-desc">Free transfer (same fare). Board JSQ-33rd line going east to Manhattan. <b>Get off at 23rd Street PATH</b> (~22 min, stops at Christopher → 9th → 14th → 23rd).</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">9:42 AM</div>
+      <div class="stop-title">23rd Street PATH — walk west to Chelsea Piers</div>
+      <div class="stop-desc">Exit at 6th Ave & 23rd St. Walk west on 23rd Street toward the Hudson — ~12 min, easy. Or hop on the <b>M23 SBS bus</b> crosstown ($3 each, tap at the curbside machine before boarding) — ~10 min.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">10:00 AM <span class="check">✓</span></div>
+      <div class="stop-title">Arte Museum — 61 Chelsea Piers</div>
+      <div class="stop-desc">Arrive right at opening — first slot of the day, fewest crowds. Show Fever ticket on phone. Immersive digital art rooms — projected forests, beaches, mirror chambers. ~75 min.</div>
+      <div class="info info-booking"><span class="icon">🎟️</span><div>Fever GA Adult · Tue 19 May · Last entry 5:30 PM (you're going at 10 AM)</div></div>
+      <div class="info info-warning"><span class="icon">⚠️</span><div>Dimly lit with mirrored + glass surfaces. Hold mom's hand through transitions between rooms — easy to lose orientation.</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">11:20 AM</div>
+      <div class="stop-title">Walk back east to 23 St-7th Ave subway</div>
+      <div class="stop-desc">10-min walk east on 23rd. Tap into subway ($3 each).</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">11:30 AM</div>
+      <div class="stop-title">1 train downtown to Rector Street</div>
+      <div class="stop-desc">~7 stops, 15 min. Get off at <b>Rector Street</b> — 5 min walk to Brookfield Place food hall.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">12:00 PM</div>
+      <div class="stop-title">Lunch — Brookfield Place / Hudson Eats (veg-friendly)</div>
+      <div class="stop-desc">Indoor food hall right next to Battery. Veg picks: <b>Sweetgreen</b> (build-your-own salads + warm bowls), <b>&pizza</b> (margherita / veg toppings), <b>Le District</b> (French market, veg crêpes + salads), <b>Black Seed Bagels</b>. Quick service, sit-down, mom can eat well in 30 min.</div>
+      <div class="info info-tip"><span class="icon">⚠️</span><div><b>Don't go hungry into Liberty — the ferry + island visit takes 3-4 hours.</b> Eat properly here.</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">12:50 PM</div>
+      <div class="stop-title">Walk south to Battery Park / Castle Clinton</div>
+      <div class="stop-desc">5-min walk. Castle Clinton is the round stone fort — that's where SOL ferry tickets are validated and security happens.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">1:00 PM</div>
+      <div class="stop-title">Battery Park — security check</div>
+      <div class="stop-desc">Airport-style screening. No large bags. <b>Bring photo ID for both of you</b> — they check at security for Crown access.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">1:30 PM <span class="check">✓</span></div>
+      <div class="stop-title">Statue of Liberty — Crown Reserve</div>
+      <div class="stop-desc">Ferry to Liberty Island. Pedestal level first (incredible Manhattan view), then the Crown climb. <b>354 narrow spiral stairs, no elevator, hot in late May.</b> Round trip up + down ~30 min.</div>
+      <div class="info info-booking"><span class="icon">🎟️</span><div>Crown Reserve · Check-in 1:30 PM · Last entrance to statue 3:30 PM</div></div>
+      <div class="info info-warning"><span class="icon">⚠️</span><div>If mom has any knee or breathing concerns, enjoy Pedestal views and skip the Crown climb — same view, no climb. Confirm at check-in.</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">~ 3:30 PM</div>
+      <div class="stop-title">Ferry to Ellis Island — Immigration Museum</div>
+      <div class="stop-desc">Included on your ticket. The Great Hall and the immigrant-story exhibits. Moving and fascinating. ~75 min for a relaxed visit.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">~ 5:00 PM</div>
+      <div class="stop-title">Ferry back to Battery Park</div>
+      <div class="stop-desc">~30 min ride. You'll be back at Castle Clinton by 5:30 PM.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">5:35 PM</div>
+      <div class="stop-title">Wall Street — Charging Bull + Fearless Girl</div>
+      <div class="stop-desc">5-min walk from Battery to Bowling Green. Quick iconic photo stop. Bull and Fearless Girl are right next to each other facing the NYSE.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">5:50 PM</div>
+      <div class="stop-title">Federal Hall + NYSE façade + Stone Street</div>
+      <div class="stop-desc">Federal Hall is free to peek inside. NYSE façade for the photo. <b>Stone Street</b> — historic cobblestone block, beautiful at dusk.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">6:20 PM</div>
+      <div class="stop-title">Walk north on Bowery to Chinatown — ~15 min</div>
+      <div class="stop-desc">Watch the city shift from finance towers to street markets. Bowery becomes Chinatown's main artery.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">6:35 PM</div>
+      <div class="stop-title">Dinner — Shu Jiao Fu Zhou, 295 Grand St</div>
+      <div class="stop-desc">Authentic Fuzhou hole-in-the-wall. Order <b>vegetable dumplings (8 pieces, $6.50)</b> + <b>peanut butter noodles</b> ($5–6). Both are signature items, both veg, both incredible. Whole meal under $20 for two.</div>
+      <div class="info info-warning"><span class="icon">💵</span><div><b>CASH ONLY.</b> Bring $40–50 in cash. ATM in the bodega at the end of Grand St if you forget.</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">7:25 PM</div>
+      <div class="stop-title">Walk to Dim Sum Sam — 80 Bowery (5 min)</div>
+      <div class="stop-desc">Cantonese dim sum, more polished setting than Shu Jiao. Cards accepted. Veg picks: <b>vegetable dumplings</b>, <b>plain rice noodle rolls (cheung fun)</b>, <b>choi sum</b> (steamed greens), and the famous <b>egg tarts</b>. Treat this as dessert + a second small course, not a full second meal.</div>
+      <div class="info info-warning"><span class="icon">🌱</span><div>Avoid: BBQ pork buns, shrimp dumplings, anything siu mai or char siu — meat-heavy. Stick to veg dumplings + greens + egg tarts.</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">8:00 PM</div>
+      <div class="stop-title">Walk northwest to Urban Revivo — 515 Broadway, SoHo</div>
+      <div class="stop-desc">~10-min walk through Little Italy and into SoHo. Mulberry St is lit up at night, lovely walking. You'll cross Canal Street into SoHo proper.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">8:10 PM</div>
+      <div class="stop-title">Urban Revivo — flagship store</div>
+      <div class="stop-desc">30,000 sq ft Chinese fast-fashion flagship — "Asia's answer to Zara." Open till 9 PM Tuesday. Browse women's + men's apparel, accessories, shoes. Affordable, trendy, mom may find something for cousins back home.</div>
+      <div class="info info-tip"><span class="icon">🛍️</span><div>If mom is wiped from the Crown stairs and just wants to head home, skip Urban Revivo and walk 12 min south to <b>WTC PATH</b> directly from Chinatown.</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">9:05 PM</div>
+      <div class="stop-title">Return — Canal St → WTC PATH → Harrison</div>
+      <div class="stop-desc">Walk 5 min south to <b>Canal Street subway</b>. Tap in ($3 each). <b>R or W train downtown</b> — 2 stops to <b>Cortlandt Street</b> (~5 min). Walk 3 min to <b>WTC PATH</b>. Tap in ($3 each). <b>Newark–WTC line westbound</b> to Harrison (~25 min). Home by ~10:00 PM.</div>
+    </div>
+  </div>
+  <div class="day-note">
+    <h4>Day at a glance · per person</h4>
+    <ul>
+      <li>2× PATH ($6) + 2× subway ($6) = <b>$12 transit</b></li>
+      <li>+ Brookfield lunch ($15-20) + Shu Jiao Fu Zhou ($10-15) + Dim Sum Sam ($10-15) ≈ <b>$45-60 food</b></li>
+      <li>+ Urban Revivo (depends on shopping)</li>
+      <li>Arte / SOL Crown already paid</li>
+    </ul>
+    <h4 style="margin-top:14px;">Critical pre-trip prep</h4>
+    <ul>
+      <li><b>Bring photo ID</b> — security checks at Crown require it for both of you.</li>
+      <li><b>Pull $40-50 cash</b> for Shu Jiao Fu Zhou — they don't take cards.</li>
+      <li>Wear comfortable shoes — 354 stairs at the Crown plus a lot of walking.</li>
+      <li>Light backpack only — no large bags allowed on the SOL ferry.</li>
+      <li>Sunset 8:13 PM — you'll be in Chinatown / SoHo when it gets dark. Mulberry St looks magical at night.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== DAY 4 ========== -->
+<section class="day" id="d20">
+  <div class="day-header">
+    <span class="day-meta"><span class="day-num">Day 04</span>Wed 20 May</span>
+    <h2 class="day-title">Graduation 🎓 → Journal Square Celebration</h2>
+    <div class="day-pills"><span class="pill special">The Whole Point</span></div>
+  </div>
+  <div class="timeline">
+    <div class="stop">
+      <div class="stop-time">9:00 AM</div>
+      <div class="stop-title">Get Ready — Photos at Home in Regalia</div>
+      <div class="stop-desc">Cap and gown, NJIT colors. Mom in her best saree. Take family photos at home before the ceremony chaos — these are the cleanest shots before the day gets sweaty.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">11:00 AM</div>
+      <div class="stop-title">Travel to NJIT, Newark</div>
+      <div class="stop-desc">Allow extra time for parking on graduation day. NJIT campus + Prudential Center area gets crowded. Confirm guest tickets if any are required for mom's seat. Bring water, snacks for mom during the wait.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">12:00 – 3:00 PM</div>
+      <div class="stop-title">Commencement Ceremony</div>
+      <div class="stop-desc">Ying Wu College of Computing — MS in Data Science. Mom in the audience, watching the journey complete. Bring tissues — she'll cry, you'll cry, it'll be perfect.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">3:30 PM</div>
+      <div class="stop-title">Family Photos on Campus</div>
+      <div class="stop-desc">Group shots with classmates, individual portraits with mom, by the campus signs and Kupfrian Hall. Then walk over to Newark Penn area for "newly graduated in front of skyline" photos.</div>
+      <div class="info info-tip"><span class="icon">📸</span><div>If budget allows, hire a professional photographer for 30–60 min. Worth it for portrait-quality shots — mom will frame these.</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">4:30 PM</div>
+      <div class="stop-title">Drive home → quick freshen-up</div>
+      <div class="stop-desc">~15 min Newark to Harrison. Mom changes into festive saree (different from morning one, ideally), you change into something celebration-ready. Touch up makeup, take a few more photos at home.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">5:30 PM</div>
+      <div class="stop-title">Harrison PATH → Journal Square — 5 min ride</div>
+      <div class="stop-desc">Tap PATH ($3 each). Newark-WTC line eastbound, 1 stop to <b>Journal Square</b>. Exit toward Pavonia/Newark Ave.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">5:45 PM</div>
+      <div class="stop-title">India Square — Newark Ave</div>
+      <div class="stop-desc">Walk down <b>Newark Ave</b> between JFK Blvd and Tonnele Ave — the "Little India" of Jersey City. Sari shops (Patel's, Sabari Saris), sweet shops (Subzi Mandi, Rajbhog), jewelry stores, paan shops, chaat carts. The whole strip lit up at night, mom will love the energy. Browse 60–90 min.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">7:00 PM</div>
+      <div class="stop-title">Celebration Dinner — Sri Ganesh's Dosa House</div>
+      <div class="stop-desc"><b>809 Newark Ave, Jersey City.</b> Pure-veg South Indian, Tamil-style. Crispy paper dosa, mini idli sambar, podi idli, filter coffee. Casual, warm, family-run — perfect for mom on grad night. Cash + card both work.</div>
+      <div class="info info-tip"><span class="icon">🍴</span><div><b>Don't love dosas tonight?</b> Swap easily — <b>Mukut</b> for upscale North Indian celebration, <b>Rajbhog Foods</b> for casual Gujarati + sweet shop, <b>Chowpatty</b> for full-veg chaat / pav bhaji. All within 5 min walk on Newark Ave.</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">8:30 PM</div>
+      <div class="stop-title">Sweets to take home</div>
+      <div class="stop-desc">Stop at <b>Rajbhog Foods</b> or <b>Subzi Mandi Sweet Shop</b> on the way back to PATH — pick up a box of mithai (kaju katli, motichoor laddoo, pista barfi). Distribute to family, save some for tomorrow's chai.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">9:00 PM</div>
+      <div class="stop-title">Return — JSQ PATH → Harrison</div>
+      <div class="stop-desc">Walk back to JSQ PATH. Tap ($3 each). Newark-WTC line westbound, 1 stop to <b>Harrison</b>. Home by ~9:20 PM. Sleep early — tomorrow is Queens Temple + Central Park.</div>
+    </div>
+  </div>
+  <div class="day-note">
+    <h4>Why JSQ India Square instead of Manhattan</h4>
+    <ul>
+      <li>Mom understands this celebration intuitively — sarees on the streets, Hindi/Gujarati/Tamil overheard, samosa smell, sweet shops glowing. Manhattan would be impressive but foreign on a deeply meaningful night.</li>
+      <li>15 min from NJIT door-to-Newark Ave step. No traffic, no wrestling with Manhattan crowds.</li>
+      <li>Wednesday evening = busy enough for energy, not so busy you can't get a table.</li>
+      <li><b>Total transit cost:</b> $12 for both of you (4× PATH at $3).</li>
+    </ul>
+    <h4 style="margin-top:14px;">If extended family is in town</h4>
+    <p>Many India Square restaurants accommodate larger parties. Mukut and Mantra (drive 25 min to Edison) handle 8–12 people if family flew in for grad. Otherwise Sri Ganesh's, Chowpatty, and Rajbhog seat 4–6 comfortably without a reservation on a weekday.</p>
+  </div>
+</section>
+
+<!-- ========== DAY 5 ========== -->
+<section class="day" id="d21">
+  <div class="day-header">
+    <span class="day-meta"><span class="day-num">Day 05</span>Thu 21 May</span>
+    <h2 class="day-title">Queens Ganesh Temple → Central Park</h2>
+    <div class="day-pills"><span class="pill special">Tamil Pilgrimage</span></div>
+  </div>
+  <div class="timeline">
+    <div class="stop">
+      <div class="stop-time">9:00 AM</div>
+      <div class="stop-title">Leave home → Harrison PATH eastbound</div>
+      <div class="stop-desc">Tap Card 1 + Card 2 ($3 each). Newark-WTC line, 1 stop to <b>Journal Square</b>. ~5 min.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">9:15 AM</div>
+      <div class="stop-title">Journal Square — transfer to JSQ-33rd line</div>
+      <div class="stop-desc">Free transfer. Board JSQ-33rd line east to Manhattan. Ride to <b>33rd Street PATH</b> (~25 min).</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">9:42 AM</div>
+      <div class="stop-title">33rd Street PATH → walk to 5 Av-Bryant Park subway</div>
+      <div class="stop-desc">Exit at 6th Ave & 33rd. Walk 8 min northeast to the <b>5 Av-Bryant Park</b> subway station (5th Ave & 42nd St). Tap into subway ($3 each).</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">9:55 AM</div>
+      <div class="stop-title">7 train Flushing-bound — 30 min ride</div>
+      <div class="stop-desc">Last stop is <b>Flushing-Main St</b>. ~10 stops. Ride takes you through Manhattan east side, then under the East River into Queens. Mom can rest.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">10:30 AM</div>
+      <div class="stop-title">Flushing-Main St → Q27 bus to temple</div>
+      <div class="stop-desc">Tap into Q27 bus on Main St ($3 each, builds toward fare cap). Ride ~5–10 min to Holly Ave / Bowne St. Walk 2 short blocks to the temple. Total ~15 min from Main St.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">10:45 AM</div>
+      <div class="stop-title">Sri Maha Vallabha Ganapati Devasthanam — Queens Ganesh Temple</div>
+      <div class="stop-desc">45-57 Bowne St. Consecrated in 1977 — the first traditional Hindu temple in North America. Granite carvings imported from India. South Indian / Tamil-style architecture, primary deity Lord Ganesh. Slow walk through, darshan at each shrine, mom's pace. ~1.5–2 hours.</div>
+      <div class="info info-warning"><span class="icon">🥻</span><div><b>Dress code:</b> No shorts or skirts above the knee, no ripped jeans. Mom in saree is ideal. They provide a $5 dhoti/garment if needed.</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">12:30 PM</div>
+      <div class="stop-title">Lunch — Ganesh Temple Canteen</div>
+      <div class="stop-desc">In the temple basement. Authentic South Indian veg — dosa, idli, vada, pongal, upma, sambar, chutney. Mom may say it's the best food on the trip. Cash + card both fine.</div>
+      <div class="info info-tip"><span class="icon">⏰</span><div>Canteen daily 8:30 AM – 8:30 PM. Lines build during weekday lunch — go right at 12:30.</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">1:30 PM</div>
+      <div class="stop-title">Q27 bus back to Flushing-Main St</div>
+      <div class="stop-desc">Same route, reverse direction. ~10 min. Or walk 15 min if she has energy.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">1:55 PM</div>
+      <div class="stop-title">7 train westbound to Manhattan — 30 min</div>
+      <div class="stop-desc">Tap into 7 train ($3 each). Ride to <b>Times Sq-42 St</b>.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">2:30 PM</div>
+      <div class="stop-title">Transfer to N/Q/R/W to Central Park</div>
+      <div class="stop-desc">Free transfer at Times Sq. Board <b>N, Q, R, or W uptown</b> — 1 stop to <b>5 Av-59 St</b>. Exit at Grand Army Plaza (Plaza Hotel area, SE corner of Central Park).</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">2:45 PM</div>
+      <div class="stop-title">Central Park — gentle south-to-mid afternoon walk</div>
+      <div class="stop-desc">Enter at Grand Army Plaza. Walk past <b>The Pond + Gapstow Bridge</b> (postcard skyline) → <b>Wollman Rink</b> → <b>The Mall</b> (tree-lined promenade) → <b>Bethesda Terrace + Fountain</b> (heart of the park).</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">4:15 PM</div>
+      <div class="stop-title">Bow Bridge + Belvedere Castle</div>
+      <div class="stop-desc">Iconic Bow Bridge photo over the Lake. Continue to Belvedere Castle — small stone castle, free, skyline views.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">5:15 PM</div>
+      <div class="stop-title">Walk back south through Strawberry Fields</div>
+      <div class="stop-desc">Pass the John Lennon "Imagine" mosaic, walk Sheep Meadow, exit near Columbus Circle or 72nd St.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">5:50 PM</div>
+      <div class="stop-title">Subway downtown to Saravana Bhavan</div>
+      <div class="stop-desc">From Columbus Circle take <b>1 train downtown</b> to <b>28 St</b> (or from 5 Av-59 St take 4/5/6 to 28 St-Park Ave South). Tap in ($3 each). ~10 min.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">6:10 PM</div>
+      <div class="stop-title">Dinner — Saravana Bhavan, 81 Lex Ave</div>
+      <div class="stop-desc">Pure-veg South Indian, Tamil Brahmin style. Massive menu — dosa, uttapam, thali, filter coffee. Full-circle Tamil day for mom: temple → canteen → Saravana Bhavan.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">7:30 PM</div>
+      <div class="stop-title">Return — 23 St PATH → Harrison</div>
+      <div class="stop-desc">Walk 8–10 min west to <b>23 St PATH</b> (6th Ave & 23rd). Tap PATH ($3 each). <b>JSQ-33rd line westbound</b> → Journal Square. Transfer to Newark-WTC line. <b>Harrison</b> at ~8:25 PM. Home by 8:30 PM.</div>
+    </div>
+  </div>
+  <div class="day-note">
+    <h4>Day at a glance · per person</h4>
+    <ul>
+      <li>4× PATH ($12) + 4× subway/bus ($12) = <b>$24 transit</b></li>
+      <li>+ Canteen lunch ($10–15) + Saravana Bhavan dinner ($15–20) ≈ <b>$30 food</b></li>
+      <li><b>Total ~$50–60 per person</b></li>
+    </ul>
+    <h4 style="margin-top:14px;">A Tamil pilgrimage day</h4>
+    <ul>
+      <li>This temple was the <b>first traditional Hindu temple in North America</b>, consecrated July 4, 1977. Significant for the diaspora.</li>
+      <li>Architecture and rituals follow South Indian / Tamil tradition — mom will recognize everything.</li>
+      <li>The Temple Canteen is famous in the Tamil community — locals queue here on weekends.</li>
+      <li>Central Park afterward is the perfect counterbalance: temple in the morning, nature in the afternoon, home food at dinner.</li>
+      <li>Today should push you over 12 paid OMNY taps in the rolling 7-day window — the rest of the week is free MTA/tram.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== DAY 6 ========== -->
+<section class="day" id="d22">
+  <div class="day-header">
+    <span class="day-meta"><span class="day-num">Day 06</span>Fri 22 May</span>
+    <h2 class="day-title">Local Day — Errands + Kearny Temple + Niagara Prep</h2>
+    <div class="day-pills"><span class="pill rest">Easy Pace</span><span class="pill special">Niagara Prep</span></div>
+  </div>
+  <div class="timeline">
+    <div class="stop">
+      <div class="stop-time">Morning</div>
+      <div class="stop-title">Sleep in + slow breakfast at home</div>
+      <div class="stop-desc">After 5 days of city marathons, mom needs a rhythm break. Coffee/chai, light breakfast, no rush.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">11:00 AM</div>
+      <div class="stop-title">Walmart — Niagara trip supplies</div>
+      <div class="stop-desc">Snacks for the road, water bottles, sunscreen, ponchos backup, plastic bags for wet clothes after Maid of the Mist, extra socks, Aleve / chewable antacid, charging cables.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">12:30 PM</div>
+      <div class="stop-title">Lunch at home</div>
+      <div class="stop-desc">Light, home-cooked. Save appetite for temple prasadam and dinner.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">2:00 PM</div>
+      <div class="stop-title">Kearny Temple visit</div>
+      <div class="stop-desc">Local Hindu temple in Kearny. Mom in saree, you in temple-appropriate attire. Quiet weekday afternoon — fewer crowds. Light prayer, prasadam if offered.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">4:00 PM</div>
+      <div class="stop-title">ShopRite — groceries for Niagara road trip</div>
+      <div class="stop-desc">Indian-friendly snacks, fruit, granola bars, water bottles, Indian lunchbox food (idli, theplas, sambar rice — easier than restaurants on the road). Pack a cooler if driving.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">6:00 PM</div>
+      <div class="stop-title">Pack for Niagara — 2 nights, 2 days</div>
+      <div class="stop-desc">Quick-dry clothes (Maid of the Mist + Cave of the Winds), comfortable walking shoes, hat, sunscreen, light jacket (mist + evening cool), camera, chargers, mom's medications, ID/passport for any Canadian-side option.</div>
+      <div class="info info-tip"><span class="icon">🎒</span><div>Pack ONE small overnight bag each — Niagara hotel rooms are compact. No need to overpack for 2 days.</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">7:30 PM</div>
+      <div class="stop-title">Early dinner at home</div>
+      <div class="stop-desc">Eat by 8 PM. Aim to be in bed by 10 PM — tomorrow starts early for Niagara.</div>
+    </div>
+  </div>
+  <div class="day-note">
+    <h4>Why this day works here</h4>
+    <ul>
+      <li>5 city days in a row (May 17–21) is intense even for a Tamil mom on adrenaline. Today is a deliberate exhale.</li>
+      <li>Kearny temple is a 5-min drive from Harrison — local, low-pressure.</li>
+      <li>Niagara is a 6+ hour drive each way OR a flight + drive. Doing groceries today saves you from gas-station food on the road.</li>
+      <li>Mom's OMNY 7-day cap likely already kicked in on May 21 — you've earned a transit-free day.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== DAY 7 ========== -->
+<section class="day" id="d23">
+  <div class="day-header">
+    <span class="day-meta"><span class="day-num">Day 07</span>Sat 23 May</span>
+    <h2 class="day-title">Niagara Falls — Day One</h2>
+    <div class="day-pills"><span class="pill travel">Travel</span></div>
+  </div>
+  <div class="timeline">
+    <div class="stop">
+      <div class="stop-time">All day</div>
+      <div class="stop-title">Niagara Falls, NY</div>
+      <div class="stop-desc">Travel to Niagara Falls (drive ~7 hrs or fly Newark → Buffalo + drive). Hotel check-in. Falls + state park.</div>
+      <div class="info info-warning"><span class="icon">🛂</span><div><b>Canadian side requires a separate Canadian visa</b> for mom. US side only is still spectacular.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DAY 8 ========== -->
+<section class="day" id="d24">
+  <div class="day-header">
+    <span class="day-meta"><span class="day-num">Day 08</span>Sun 24 May</span>
+    <h2 class="day-title">Niagara Falls — Day Two & Return</h2>
+    <div class="day-pills"><span class="pill travel">Return</span></div>
+  </div>
+  <div class="timeline">
+    <div class="stop">
+      <div class="stop-time">All day</div>
+      <div class="stop-title">Niagara Falls + return to NJ</div>
+      <div class="stop-desc">Morning at the falls. Travel back in the afternoon/evening. Home by ~9–10 PM if driving.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DAY 9 ========== -->
+<section class="day" id="d25">
+  <div class="day-header">
+    <span class="day-meta"><span class="day-num">Day 09</span>Mon 25 May</span>
+    <h2 class="day-title">Akshardham</h2>
+    <div class="day-pills"><span class="pill booked">Reservation Required</span><span class="pill warn">Memorial Day</span></div>
+  </div>
+  <div class="timeline">
+    <div class="stop">
+      <div class="stop-time">9:30 AM</div>
+      <div class="stop-title">Drive to Robbinsville (~1 hr)</div>
+      <div class="stop-desc">Use Google Maps with "BAPS Swaminarayan Akshardham, Robbinsville." Free parking on site.</div>
+      <div class="info info-warning"><span class="icon">📅</span><div><b>Memorial Day = free timed reservation required.</b> Book NOW at usa.akshardham.org/visit — federal holiday slots fill within days. Pick a <b>9:30–10:30 AM slot</b>: smaller crowds, mom is fresh after Niagara return, school groups arrive later. Entry window = 30 min before/after slot.</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">10:30 AM</div>
+      <div class="stop-title">Security + entry</div>
+      <div class="stop-desc">Bag check, no outside food, phones silent. Visitor center first for orientation video.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">11:00 AM</div>
+      <div class="stop-title">Mahamandir + Brahma Vihara</div>
+      <div class="stop-desc">The world's largest modern Hindu temple — 191 feet tall, 185 acres, intricate marble carvings imported from India, Italy, Greece, Bulgaria, Turkey, Myanmar. Allow 2.5–3 hours. No phones inside the Mahamandir.</div>
+      <div class="info info-tip"><span class="icon">🥻</span><div><b>Dress code:</b> shoulders + knees covered. No sleeveless or low-cut tops. Saree or salwar = perfect; jeans + long-sleeve also fine. No footwear inside the Mahamandir.</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">1:30 PM</div>
+      <div class="stop-title">Lunch — Shayona Café (on-site)</div>
+      <div class="stop-desc">Pure vegetarian Gujarati and Indian dishes. The thali is excellent. Open 11 AM – 8 PM. Mom will love that the entire menu is shuddh shakahari.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">2:30 PM</div>
+      <div class="stop-title">Outdoor grounds + Akshardham Store</div>
+      <div class="stop-desc">Walk the gardens, reflection ponds, and outdoor pavilions. Take photos of the Mahamandir from different angles. Stop by the souvenir store — religious items, books, framed prints to take back as gifts.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">4:00 PM</div>
+      <div class="stop-title">Drive home — ~1 hr</div>
+      <div class="stop-desc">Easy drive back. Mom will likely nap in the car after the temple's spiritual + walking effort. Home by ~5 PM.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">Evening</div>
+      <div class="stop-title">Rest at home</div>
+      <div class="stop-desc">Light dinner, family chai, early night. Tomorrow's plan is still TBD — keeping the schedule open lets mom recover from a heavy stretch (Niagara → Akshardham).</div>
+    </div>
+  </div>
+  <div class="day-note">
+    <h4>Why a single-anchor day works here</h4>
+    <ul>
+      <li>You return from Niagara late Sunday night (May 24). Mom will be tired Memorial Day morning.</li>
+      <li>Akshardham alone is a full spiritual + visual experience — 4-5 hours easy, no need to add more.</li>
+      <li>An early home arrival (5 PM) means mom rests well for whatever May 26 ends up being.</li>
+      <li>Tuesday May 26 = Akshardham closed (every Tuesday). So today is the right day for the temple.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== DAY 10 ========== -->
+<section class="day" id="d26">
+  <div class="day-header">
+    <span class="day-meta"><span class="day-num">Day 10</span>Tue 26 May</span>
+    <h2 class="day-title">Yet to be Decided</h2>
+    <div class="day-pills"><span class="pill warn">TBD</span></div>
+  </div>
+  <div class="timeline">
+    <div class="stop">
+      <div class="stop-time">—</div>
+      <div class="stop-title">Plan still open</div>
+      <div class="stop-desc">No fixed plan yet. Options under consideration include: a Hudson Valley day trip, a Manhattan neighborhood walk, a beach day at Asbury Park, a Broadway matinee, or a rest day at home. Decide closer to the date based on mom's energy and weather.</div>
+    </div>
+  </div>
+  <div class="day-note">
+    <h4>Why leave it open</h4>
+    <ul>
+      <li>Mom returns from Niagara on May 24 (long weekend), and May 25 is Akshardham — she may genuinely need a slower day.</li>
+      <li>May 27 is Oak Tree Road (busy), May 28 is Philadelphia (full day), so a flexible May 26 keeps the rhythm sustainable.</li>
+      <li>Weather forecast closer to the date will inform whether outdoor day trips (beach, Hudson Valley) make sense.</li>
+      <li>Akshardham closes Tuesdays — so this can't be a temple day.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== DAY 11 ========== -->
+<section class="day" id="d27">
+  <div class="day-header">
+    <span class="day-meta"><span class="day-num">Day 11</span>Wed 27 May</span>
+    <h2 class="day-title">Oak Tree Road — Little India Day</h2>
+    <div class="day-pills"><span class="pill shopping">Shopping</span><span class="pill rest">Easy Pace</span></div>
+  </div>
+  <div class="timeline">
+    <div class="stop">
+      <div class="stop-time">10:30 AM</div>
+      <div class="stop-title">Late Brunch — Saravana Bhavan or Dosa Hut</div>
+      <div class="stop-desc">South Indian breakfast spread. Dosa, idli, vada, pongal, filter coffee. Dosa Hut for variety, Saravana for purity. (Note: Saravana Bhavan Edison is a different location from the Manhattan one you visited May 21 — same food, suburban setting, easier seating.)</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">12:30 PM</div>
+      <div class="stop-title">Patel Brothers — Groceries</div>
+      <div class="stop-desc">Spices, lentils, snacks, frozen foods that don't exist in Tamil Nadu. Make a list of what to take back to India. Bring a wheeled cart or large tote — Patel Brothers groceries get heavy fast.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">2:00 PM</div>
+      <div class="stop-title">Sweets at Sukhadia's or Maharaja Sweets</div>
+      <div class="stop-desc">Mithai, chaat, kulfi. Take home a box of mixed sweets — pista barfi, kaju katli, motichoor laddoo. Vacuum-pack any sweets going back to India.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">3:30 PM</div>
+      <div class="stop-title">Saree Shopping — Roopkala or India Sari Palace</div>
+      <div class="stop-desc">Browse silk and cotton sarees, salwar suits, blouse fabric. Better in afternoon (less crowded). Bring measurements if buying for relatives. Tamil-specific sarees (Kanchipuram silk) available at most stores here.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">5:30 PM</div>
+      <div class="stop-title">BAPS Mandir Edison</div>
+      <div class="stop-desc">Smaller Swaminarayan temple — different vibe from the big Robbinsville Akshardham (May 25) and the Tamil-style Queens Ganesh (May 21). Quieter evening visit. Free.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">7:00 PM</div>
+      <div class="stop-title">Dinner — Chand Palace or Mantra</div>
+      <div class="stop-desc"><b>Chand Palace</b> for pure-veg North Indian thali (casual, mom-style), or <b>Mantra</b> for upscale (better for if dad/family joins). End the day rested and full.</div>
+    </div>
+  </div>
+  <div class="day-note">
+    <h4>Why this day works here</h4>
+    <ul>
+      <li>You're back from Manhattan-heavy days (May 26 Met) and before Philly travel (May 28). Edison rhythm break.</li>
+      <li>Oak Tree Road has more variety than JSQ India Square — full Tamil + Telugu + Punjabi + Gujarati spread. Mom can find Tamil-specific things (saris, idli rice, etc.) she might not have found in JSQ.</li>
+      <li>Most shops on Oak Tree Road are within a 5–10 min drive of each other; park once at the strip plaza and walk between nearby ones.</li>
+      <li>If you have an empty suitcase, fill it tonight with sweets, spices, sarees — May 29 (Jersey Gardens) is for Western brand shopping.</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== DAY 12 ========== -->
+<section class="day" id="d28">
+  <div class="day-header">
+    <span class="day-meta"><span class="day-num">Day 12</span>Thu 28 May</span>
+    <h2 class="day-title">Philadelphia — Liberty, Cheesesteaks & Mosaics</h2>
+    <div class="day-pills"><span class="pill booked">Timed Entry</span><span class="pill travel">Day Trip</span></div>
+  </div>
+  <div class="timeline">
+    <div class="stop">
+      <div class="stop-time">7:30 AM</div>
+      <div class="stop-title">Drive to Philly (~1.5 hrs)</div>
+      <div class="stop-desc">NJ Turnpike South. Park in Old City near 5th & Market.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">10:00 AM</div>
+      <div class="stop-title">Liberty Bell Center</div>
+      <div class="stop-desc">Free, walk-in. Quick visit, 20–30 min. The famous crack and the original bell.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">10:45 AM <span class="check">✓</span></div>
+      <div class="stop-title">Independence Hall</div>
+      <div class="stop-desc">Where the Declaration of Independence and Constitution were signed. Timed-entry tickets required — book in advance at recreation.gov (small reservation fee).</div>
+      <div class="info info-warning"><span class="icon">🎟️</span><div><b>Reserve your tickets now</b> — Independence Hall sells out same-day in late May.</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">12:00 PM</div>
+      <div class="stop-title">Reading Terminal Market — Lunch</div>
+      <div class="stop-desc">Philly classic — DiNic's roast pork sandwich (better than cheesesteak per locals), Beiler's Amish doughnuts, Bassetts ice cream. Loud, packed, wonderful.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">1:30 PM</div>
+      <div class="stop-title">City Hall + LOVE Park</div>
+      <div class="stop-desc">Walk past Philly's wedding-cake City Hall to LOVE Park for the iconic LOVE statue photo.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">2:30 PM</div>
+      <div class="stop-title">Magic Gardens — Isaiah Zagar's Mosaics</div>
+      <div class="stop-desc">A half-block of mosaic-covered walls and tunnels. Whimsical and mesmerizing — mom will love it. ~1 hr.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">4:00 PM</div>
+      <div class="stop-title">Philadelphia Museum of Art — Rocky Steps</div>
+      <div class="stop-desc">Don't actually go inside the museum — just run up the steps for the Rocky photo, stand at the top with arms raised, take the iconic shot. Bronze Rocky statue at the bottom.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">5:30 PM</div>
+      <div class="stop-title">Drive home</div>
+      <div class="stop-desc">~1.5 hrs back. Stop at Italian Market on the way out if energy permits — South 9th Street, full of food vendors.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DAY 13 ========== -->
+<section class="day" id="d29">
+  <div class="day-header">
+    <span class="day-meta"><span class="day-num">Day 13</span>Fri 29 May</span>
+    <h2 class="day-title">Tax‑Free Shopping — Jersey Gardens & Newport</h2>
+    <div class="day-pills"><span class="pill shopping">Mall Day</span></div>
+  </div>
+  <div class="timeline">
+    <div class="stop">
+      <div class="stop-time">10:00 AM</div>
+      <div class="stop-title">Jersey Gardens Outlet Mall — Elizabeth, NJ</div>
+      <div class="stop-desc">Bigger names at outlet prices — Coach, Kate Spade, Tommy, Calvin Klein, Skechers, Nike. <b>NJ has zero sales tax on clothing and shoes.</b> Bring an empty suitcase.</div>
+      <div class="info info-tip"><span class="icon">🛍️</span><div>Hit Coach + Kate Spade first — the lines build after lunchtime. Look for "Coach Outlet exclusive" tags.</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">1:30 PM</div>
+      <div class="stop-title">Lunch at the food court</div>
+      <div class="stop-desc">Variety of options. Refuel for round two.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">3:00 PM</div>
+      <div class="stop-title">Newport Centre Mall — Jersey City</div>
+      <div class="stop-desc">Regular mall (not outlets) — H&M, Zara, Macy's, Sephora. Different vibe, different brands.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">5:30 PM</div>
+      <div class="stop-title">Optional: American Dream Mall</div>
+      <div class="stop-desc">East Rutherford. Massive — has indoor ski slope, Nickelodeon Universe. Skip if shopping fatigue is real.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">7:30 PM</div>
+      <div class="stop-title">Dinner — Hoboken or Edison</div>
+      <div class="stop-desc">Casual end. Pack tomorrow's bags tonight — DC trip starts at sunrise.</div>
+    </div>
+  </div>
+  <div class="day-note">
+    <h4>Indian-shopping pro tips</h4>
+    <ul>
+      <li>Coach wallets and Kate Spade bags are ~50–60% cheaper here than India retail</li>
+      <li>Skechers + Crocs are popular gifts for relatives — buy in bulk</li>
+      <li>Bath & Body Works and Victoria's Secret have buy-one-get-one constantly</li>
+      <li>Save receipts — duty-free limits at Indian customs are generous but documented purchases help</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== DAY 14 ========== -->
+<section class="day" id="d30">
+  <div class="day-header">
+    <span class="day-meta"><span class="day-num">Day 14</span>Sat 30 May</span>
+    <h2 class="day-title">DC Day One — National Mall</h2>
+    <div class="day-pills"><span class="pill travel">Travel</span></div>
+  </div>
+  <div class="timeline">
+    <div class="stop">
+      <div class="stop-time">8:00 AM</div>
+      <div class="stop-title">Travel to DC</div>
+      <div class="stop-desc"><b>Drive:</b> ~3.5 hrs via I-95 S — easier with luggage and Maryland day-trip flexibility.<br><b>Amtrak:</b> ~3 hrs from Newark Penn → Union Station — relaxed, no parking stress in DC.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">12:30 PM</div>
+      <div class="stop-title">Hotel check-in</div>
+      <div class="stop-desc">Stay near the Mall — Capitol Hill, Penn Quarter, or Foggy Bottom areas have the best walkability.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">2:00 PM</div>
+      <div class="stop-title">Lincoln Memorial</div>
+      <div class="stop-desc">Start at the western end. Climb the steps, stand where MLK gave the "I Have a Dream" speech. Walk down to the Reflecting Pool.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">3:00 PM</div>
+      <div class="stop-title">WWII Memorial → Washington Monument</div>
+      <div class="stop-desc">Walk east along the Reflecting Pool. WWII Memorial mid-way. Washington Monument at the end — 555 feet of marble obelisk.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">4:00 PM</div>
+      <div class="stop-title">MLK Memorial → Tidal Basin → Jefferson Memorial</div>
+      <div class="stop-desc">Loop south around the Tidal Basin. The cherry trees aren't in bloom (that's March), but the green canopy and water are beautiful in late May.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">6:00 PM</div>
+      <div class="stop-title">White House — outside view</div>
+      <div class="stop-desc">North side from Lafayette Square or south side from the Ellipse. Photo, then move on. Public tours need months of advance planning.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">7:00 PM</div>
+      <div class="stop-title">Dinner — Penn Quarter</div>
+      <div class="stop-desc">Old Ebbitt Grill (DC institution, presidents have dined here), Founding Farmers (farm-to-table classic), or Rasika for upscale Indian if mom wants familiar.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">8:30 PM</div>
+      <div class="stop-title">Sunset return to Lincoln Memorial</div>
+      <div class="stop-desc">Late-May sunset is around 8:30 PM. The Lincoln statue at sunset, with the Washington Monument lit behind — the photo of DC.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DAY 15 ========== -->
+<section class="day" id="d31">
+  <div class="day-header">
+    <span class="day-meta"><span class="day-num">Day 15</span>Sun 31 May</span>
+    <h2 class="day-title">DC Day Two — Smithsonian</h2>
+  </div>
+  <div class="timeline">
+    <div class="stop">
+      <div class="stop-time">9:30 AM</div>
+      <div class="stop-title">Air & Space Museum</div>
+      <div class="stop-desc">The Wright Flyer, Apollo 11 command module, Spirit of St. Louis, moon rocks. Most popular Smithsonian — go early. ~2 hrs.</div>
+      <div class="info info-tip"><span class="icon">🎫</span><div>All Smithsonian museums are <b>free</b>. Air & Space requires a free timed-entry pass — reserve online.</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">12:00 PM</div>
+      <div class="stop-title">Lunch — Mitsitam Café</div>
+      <div class="stop-desc">Inside the National Museum of the American Indian. Best museum food in DC — Native American cuisine, surprisingly excellent.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">1:30 PM</div>
+      <div class="stop-title">Natural History Museum</div>
+      <div class="stop-desc">Hope Diamond, dinosaur hall, ocean hall with the giant whale, butterfly pavilion. ~2 hrs.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">4:00 PM</div>
+      <div class="stop-title">National Gallery of Art — West Building</div>
+      <div class="stop-desc">Vermeer, da Vinci's Ginevra de' Benci (only da Vinci in the Americas), Rembrandt, Monet. Walk through the Sculpture Garden if open.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">6:00 PM</div>
+      <div class="stop-title">Capitol Hill walk</div>
+      <div class="stop-desc">Walk east toward the Capitol building (you're not touring inside today, just admiring). Stop at the Capitol Reflecting Pool for photos.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">7:00 PM</div>
+      <div class="stop-title">Dinner + Georgetown</div>
+      <div class="stop-desc">Take Uber/Metro to Georgetown. Dinner on M Street, then walk the waterfront. Cobblestone streets, historic homes, Potomac views.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DAY 16 ========== -->
+<section class="day" id="d1">
+  <div class="day-header">
+    <span class="day-meta"><span class="day-num">Day 16</span>Mon 1 Jun</span>
+    <h2 class="day-title">Maryland — Annapolis</h2>
+    <div class="day-pills"><span class="pill travel">Day Trip</span></div>
+  </div>
+  <div class="timeline">
+    <div class="stop">
+      <div class="stop-time">9:00 AM</div>
+      <div class="stop-title">Drive to Annapolis (45 min from DC)</div>
+      <div class="stop-desc">Maryland's capital, charming colonial waterfront town.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">10:00 AM</div>
+      <div class="stop-title">US Naval Academy</div>
+      <div class="stop-desc">Visitor Center → Chapel (stunning interior with John Paul Jones's crypt below) → Bancroft Hall (largest dorm in the world). Guided walking tours run 60–90 min.</div>
+      <div class="info info-warning"><span class="icon">🛂</span><div><b>Photo ID required for entry.</b> Mom needs her passport — driver's license isn't accepted for non-citizens.</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">12:30 PM</div>
+      <div class="stop-title">Lunch — Boatyard Bar & Grill or Vida Taco</div>
+      <div class="stop-desc">Maryland crab cakes are the move — Boatyard does a great one. Vida Taco for casual coastal Mexican.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">2:00 PM</div>
+      <div class="stop-title">Main Street + City Dock</div>
+      <div class="stop-desc">Walk down Main Street to the harbor. Boats, ice cream at Storm Bros (Annapolis classic), little shops. Watch sailboats from the dock.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">3:30 PM</div>
+      <div class="stop-title">William Paca House Gardens</div>
+      <div class="stop-desc">Colonial-era home with two acres of restored 18th-century gardens. Quiet and beautiful — easy on mom's legs.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">5:00 PM</div>
+      <div class="stop-title">Drive back to DC</div>
+      <div class="stop-desc">45 min back. Easy dinner near the hotel, or pick something memorable — last DC night.</div>
+    </div>
+  </div>
+  <div class="day-note">
+    <h4>Alternative: Baltimore instead of Annapolis</h4>
+    <p>If you'd rather have a livelier day: Baltimore Inner Harbor + the National Aquarium (excellent — beluga whales, dolphin shows, jellyfish gallery). 1 hr from DC. More activity-packed than Annapolis, less charming.</p>
+  </div>
+</section>
+
+<!-- ========== DAY 17 ========== -->
+<section class="day" id="d2">
+  <div class="day-header">
+    <span class="day-meta"><span class="day-num">Day 17</span>Tue 2 Jun</span>
+    <h2 class="day-title">DC Day Three — Capitol & Mount Vernon</h2>
+    <div class="day-pills"><span class="pill booked">Capitol Tour</span><span class="pill travel">Final Day</span></div>
+  </div>
+  <div class="timeline">
+    <div class="stop">
+      <div class="stop-time">9:00 AM</div>
+      <div class="stop-title">Library of Congress</div>
+      <div class="stop-desc">The single most stunning interior in DC, and most tourists skip it. Free entry. Walk through the Great Hall, see the Gutenberg Bible, peek into the Main Reading Room from the visitor gallery. ~1.5 hrs.</div>
+      <div class="info info-tip"><span class="icon">📚</span><div>Don't miss this. It's better than the Capitol tour, honestly.</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">10:30 AM <span class="check">✓</span></div>
+      <div class="stop-title">US Capitol Tour</div>
+      <div class="stop-desc">Free, but reserve 2+ weeks ahead through your Congressional rep's office or via visitthecapitol.gov. ~1 hr tour. Rotunda, Statuary Hall, Crypt.</div>
+      <div class="info info-warning"><span class="icon">🎟️</span><div><b>Book Capitol tour now</b> — slots fill weeks in advance.</div></div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">12:00 PM</div>
+      <div class="stop-title">Supreme Court</div>
+      <div class="stop-desc">Across the street from the Capitol. Free to enter the Great Hall. If court is in session you can watch arguments.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">1:00 PM</div>
+      <div class="stop-title">Lunch</div>
+      <div class="stop-desc">Quick lunch — you have a drive ahead.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">2:00 PM</div>
+      <div class="stop-title">Mount Vernon — George Washington's Estate</div>
+      <div class="stop-desc">25 min south of DC along the GW Parkway (pretty drive). Washington's home, gardens, working farm, his and Martha's tombs. The Potomac views are gorgeous. Allow 2.5 hrs.</div>
+    </div>
+    <div class="stop">
+      <div class="stop-time">5:00 PM</div>
+      <div class="stop-title">Drive back / pack / depart</div>
+      <div class="stop-desc">Either drive home to NJ (~3.5 hrs) or fly out from DCA, IAD, or BWI. End of trip. Mom heads home soon — make tonight memorable.</div>
+    </div>
+  </div>
+</section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <h2>Things to lock down this week</h2>
+    <p class="sub">Reservations and bookings worth nailing before May 17.</p>
+    <div class="checklist">
+      <div class="check-item"><span class="num">01</span><div><b>Akshardham — May 25</b><span>Memorial Day reservation at usa.akshardham.org/visit</span></div></div>
+      <div class="check-item"><span class="num">02</span><div><b>Independence Hall — May 28</b><span>Timed entry tickets at recreation.gov</span></div></div>
+      <div class="check-item"><span class="num">03</span><div><b>Capitol Tour — June 2</b><span>visitthecapitol.gov or Congressional rep, 2+ weeks ahead</span></div></div>
+      <div class="check-item"><span class="num">04</span><div><b>Niagara — May 23–24</b><span>Hotel + flight or rental car. Memorial Day weekend prices surge.</span></div></div>
+      <div class="check-item"><span class="num">05</span><div><b>Graduation Dinner — May 20</b><span>Battello, Mantra, or whichever — book now</span></div></div>
+      <div class="check-item"><span class="num">06</span><div><b>Air & Space — May 31</b><span>Free timed-entry pass on the Smithsonian site</span></div></div>
+      <div class="check-item"><span class="num">07</span><div><b>Naval Academy — June 1</b><span>Confirm mom has her passport for ID-required entry</span></div></div>
+      <div class="check-item"><span class="num">08</span><div><b>DC Hotel — May 30 to June 2</b><span>3 nights, Capitol/Penn Quarter/Foggy Bottom area</span></div></div>
+    </div>
+
+    <div class="bookings-list">
+      <h3>Confirmed Bookings</h3>
+      <div class="b-row"><b>Vessel — General Admission</b><span class="when">RSGJP8MT · Mon 18 May · 11:00 AM</span></div>
+      <div class="b-row"><b>Edge — Hudson Yards</b><span class="when">Adult × 2 · Mon 18 May · 12:10 PM</span></div>
+      <div class="b-row"><b>Summit One Vanderbilt</b><span class="when">Adult × 2 · Mon 18 May · 8:00 PM</span></div>
+      <div class="b-row"><b>Statue of Liberty — Crown Reserve</b><span class="when">Tue 19 May · Check-in 1:30 PM · Last 3:30 PM</span></div>
+      <div class="b-row"><b>Arte Museum NYC — Chelsea Piers</b><span class="when">Fever GA · Tue 19 May · Last entry 5:30 PM</span></div>
+    </div>
+
+    <p class="signoff">Made with love for amma, Nithya · graduation '26</p>
+  </div>
+</footer>
+
+</body>
+</html>
